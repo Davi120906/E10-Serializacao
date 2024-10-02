@@ -13,7 +13,7 @@ public class Main {
 
 
         Conta cc = new ContaCorrente(1234, joao, 0, 1500,001);
-        Conta cp = new ContaPoupanca(12121, lojinha, 10000, 1500,123);
+        Conta cp = SerializaConta.desserializarConta("123-12121.ser");
         
         SerializaConta.serializar(cp);
 
